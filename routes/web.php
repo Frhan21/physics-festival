@@ -77,6 +77,8 @@ Route::get('/admins/post',[AdminController::class,'post_index'])->name('post');
 Route::get('/admins/post/create',[AdminController::class,'post_create'])->name('admin-create');
 Route::post('/admins/post/create',[AdminController::class,'post_store'])->name('admin-store');
 
+Route::post('/admins/post/{post}',[AdminController::class,'destroy'])->name('del_post');
+
 Route::get('/admins/post/checkSlug',[AdminController::class,'checkSlug'] );
 
 

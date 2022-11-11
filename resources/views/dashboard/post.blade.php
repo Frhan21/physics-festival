@@ -10,8 +10,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h2 class="mb-4">{{ $post->title }}</h2>
-            <p>By <a href="#" class="text-decoration-none">{{ $post->user->name }}</a> </p>
+            <p>By <a href="#" class="text-decoration-none">{{ $post->user->name }}</a></p>
+            @if (request('image'))
+            @else
             <img src="https://source.unsplash.com/1200x400?{{ $post->title }}" class="img-fluid rounded-top" alt="{{ $post->title }}">
+            @endif
             <article class="my-5 fs-5">
                 {!! $post->body !!}
             </article>

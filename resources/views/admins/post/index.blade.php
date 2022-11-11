@@ -28,10 +28,10 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $post->title }}</td>
                                     <td>
-                                        <form action="/admins/post/{{ $post->slug }}" method="post" class="d-inline">
+                                        <form action="{{ route("del_post") }}" method="post" class="d-inline">
                                             @method('delete')
                                             @csrf
-                                            <a class="btn btn-danger" href="" role="button"
+                                            <a class="btn btn-danger" href="/admins/post" role="button"
                                                 onclick="return confirm('Apa Kamu Yakin ?? ')"><i
                                                     class="bi bi-file-earmark-excel "></i></a>
                                         </form>

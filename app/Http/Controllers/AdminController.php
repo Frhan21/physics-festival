@@ -75,6 +75,11 @@ class AdminController extends Controller
     }
 
 
+    public function destroy(Post $post)
+    {
+        Post::destroy($post->id);
+        return redirect('/dashboard/post')->with('success','Postingan berhasil dihapuskan !!');
+    }
 
     public function checkSlug(Request $request)
     {
