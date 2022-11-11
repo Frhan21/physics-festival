@@ -28,7 +28,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $post->title }}</td>
                                     <td>
-                                        <form action="" method="post" class="d-inline">
+                                        <form action="/admins/post/{{ $post->slug }}" method="post" class="d-inline">
                                             @method('delete')
                                             @csrf
                                             <a class="btn btn-danger" href="" role="button"

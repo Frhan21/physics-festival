@@ -52,7 +52,7 @@
                                                     Waktu
                                                 </div>
                                                 <div class="sub">
-                                                    29 Januari 2023
+                                                    23 Januari 2023
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +82,19 @@
                                             <br>
                                             <br>
                                             Pendaftaran dimulai dari tanggal 20 November 2022 - 28 Januari 2023.
-                                            <br><a name="" id="" class="btn btn-primary " href="/dashboard/create?title=Seminar%20Nasional" role="button">Daftar sekarang!</a>
+                                            <br>
+                                            <strong>Biaya Pendaftaran</strong>
+                                            <ul>
+                                                <li>Untuk Pendaftaran 20 November - 2 Desember 2022 = <strong> <i>Rp 15.000,-</i></strong></li>
+                                                <li>
+                                                    Untuk Pendaftaran 2 Desember 2022 - 21 Januari 2023 = <strong> <i>Rp 20.000,-</i></strong>
+                                                </li>
+                                                <li>
+                                                    Pendaftaran On the Spot = <strong><i>Rp 25.000,-</i> </strong>
+                                                </li>
+                                                <li>Ketik Nama pada Sertifikat = <strong><i>+Rp 5.000,-</i></strong></li>
+                                            </ul>
+                                            <a name="" id="" class="btn btn-primary " href="/dashboard/create?title=Seminar%20Nasional" role="button">Daftar sekarang!</a>
                                         </div>
                                     </div>
                                 </div>
