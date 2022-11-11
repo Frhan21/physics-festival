@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    scroll-margin-block-start: 5rem;
+    font-family: 'Poppins', sans-serif;
+    transition: 400ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+    /* height: 50px; */
+    width: 75%;
+    font-size: 1rem;
+}
+
+.nav-link {
+    color: #252525;
+}
+
+.log-in {
+    color: #252525;
+}
+
+.sign-up {
+    background-color: #252525;
+    border: #252525;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    max-height: max-content;
+}
+
+.content {
+    width: 75%;
+    height: max-content;
+    padding: 0;
+    margin: auto;
+}
+
+/* .col-12 {
+    border: 2px solid tomato;
+} */
+
+.waktu, .lokasi {
+    /* width: 95%; */
+    margin: auto;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.waktu {
+    background-color: rgb(212, 217, 243);
+}
+
+.waktu svg {
+    height: 40px;
+}
+
+.lokasi {
+    background-color: rgb(243, 204, 204);
+}
+
+/* .test {
+    border: 1px solid tomato;
+} */
+
+.detail {
+    border-radius: 8px;
+    background-color: rgb(212, 217, 243);
+}
+
+.side {
+    height: max-content;
+    border-radius: 8px;
+    background-color: rgb(212, 217, 243);
+}

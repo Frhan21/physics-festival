@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    scroll-margin-block-start: 5rem;
+    transition: 400ms;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 50%);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    /* height: 50px; */
+    width: 75%;
+    font-size: 1rem;
+}
+
+.nav-link {
+    color: #252525;
+}
+
+.log-in {
+    color: #252525;
+}
+
+.sign-up {
+    background-color: #252525;
+    border: #252525;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    max-height: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.content {
+    width: 75%;
+    height: max-content;
+    padding: 0;
+    margin: auto;
+}
+
+/* .col-12 {
+    border: 2px solid tomato;
+} */
+
+.waktu, .lokasi, .peserta {
+    /* width: 95%; */
+    margin: auto;
+    height: max-content;
+    border-radius: 10px;
+    padding-right: 1.5rem;
+}
+
+.waktu:hover, .lokasi:hover, .peserta:hover, .detail:hover, .side:hover {
+    transform: translateY(-5px);
+    transition: 300ms;
+}
+
+.waktu svg, .lokasi svg, .peserta svg {
+    height: 40px;
+}
+
+.waktu {
+    background-color: rgb(212, 217, 243);
+}
+
+.lokasi {
+    background-color: rgb(243, 204, 204);
+}
+
+.peserta {
+    background-color: rgb(218, 255, 223);
+}
+
+/* .test {
+    border: 1px solid tomato;
+} */
+
+.detail {
+    border-radius: 8px;
+    background-color: rgb(212, 217, 243);
+    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.waktu, .lokasi, .peserta, .detail, .side {
+    background-color: white!important;
+}
+
+.judul .detail {
+    background-color: inherit;
+}
+
+.detail ul {
+    list-style: lower-latin;
+}
+
+.last {
+    margin-bottom: 5rem;
+}
+
+.side {
+    height: max-content;
+    border-radius: 8px;
+    background-color: rgb(212, 217, 243);
+}
+
+.sosial {
+    font-size: calc(2.4rem - 1vw);
+}
+
+.sosial a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .side{
+        font-size: .8rem !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .waktu, .lokasi {
+        margin-top: 10px;
+    }
+
+    .side {
+        font-size: .8rem;
+    }
+
+    .sosial {
+        font-size: 1rem;
+    }
+
+    .text-muted {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .waktu svg, .lokasi svg, .peserta svg {
+        height: 25px;
+    }
+
+    .waktu, .lokasi, .peserta {
+        padding-block: 1rem!important;
+        padding-inline-start: 2rem!important;
+    }
+
+    .detail {
+        font-size: .8rem;
+        padding-inline-start: 2rem!important;
+    }
+
+    .btn {
+        font-size: .8rem;
+    }
+
+    .side {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .waktu, .lokasi, .peserta {
+        padding-block: 1rem!important;
+        padding-inline-start: 1.5rem!important;
+    }
+
+    .ket .head, .ket .sub {
+        font-size: .7rem;
+    }
+
+    .waktu svg, .lokasi svg, .peserta svg {
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* .waktu, .lokasi, .peserta {
+        padding-block: 1rem!important;
+        padding-inline-start: 1.5rem!important;
+    } */
+
+    /* .ket .head, .ket .sub {
+        font-size: .7rem;
+    }
+
+    .waktu svg, .lokasi svg, .peserta svg {
+        height: 15px;
+    } */
+}

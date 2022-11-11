@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    scroll-margin-block-start: 5rem;
+    font-family: 'Poppins', sans-serif;
+    transition: 400ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+    /* height: 50px; */
+    width: 75%;
+    font-size: 1rem;
+}
+
+.nav-link {
+    color: #252525;
+}
+
+.log-in {
+    color: #252525;
+}
+
+.sign-up {
+    background-color: #252525;
+    border: #252525;
+}
+
+/* MAIN */
+main section {
+    width: 75%;
+    /* height: 75vh; */
+    margin-bottom: 50px;
+}
+
+/* HOME */
+#home {
+    background-color: #252525;
+    height: 28rem;
+}
+
+#home .home-header {
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 3;
+}
+
+#home .home-header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#home .home-header span {
+    font-size: 1.5rem;
+}
+
+#home .home-img img {
+    opacity: 0.7;
+}
+#home .home-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(90deg, #1a1a1a, #252525dc);
+}
+
+/* ABOUT */
+#about {
+    width: 60%;
+    height: max-content;
+}
+
+#about .about {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+#about .about-sub {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+#about .about-isi {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* GALLERY */
+#gallery {
+    height: 80vh;
+    background-color: #023047;
+}
+
+#gallery .gallery {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1rem;
+}
+
+#gallery .gallery-sub {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    z-index: 0;
+    opacity: .5;
+    top: 7rem;
+    left: 10px;
+    line-height: 20px;
+}
+
+#gallery .gambar div {
+    z-index: 2;
+}
+
+/* PF IN NUMBER */
+#pf-in-numbers {
+    height: 60vh;
+    background-color: white;
+}
+
+/* EVENTS */
+#events {
+    height: max-content;
+    width: 70%;
+}
+
+#events .events {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+#events .events-sub {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+#events .card {
+    overflow: hidden;
+    color: #252525;
+}
+
+#events .card-title {
+    z-index: 2;
+    bottom: 1rem;
+}
+
+#events .card-title a{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #252525;
+}
+
+#events .card-title .text-muted {
+    display: none;
+}
+
+#events .card-text {
+    z-index: 2;
+}
+
+#events .card-img-overlay .selfie {
+    font-size: 1.8rem;
+    bottom: -.3rem;
+}
+
+.card .card-img-overlay .bar-bawah {
+    height: 5rem;
+    z-index: 1;
+    background-color: white!important;
+}
+
+.card .card-img-overlay:hover .bar-bawah{
+    height: 19rem;
+}
+
+.card .card-img-overlay:hover .card-title{
+    transform: translateY(-14rem);
+}
+
+.card .card-img-overlay:hover .card-text{
+    transform: translateY(-14rem);
+}
+
+/* TEAMS */
+#teams {
+    --h-bar-bawah: 50px;
+    --d-lingkaran: 150px;
+    --r-lingkaran: calc(var(--d-lingkaran) / 2);
+
+    width: 60%;
+}
+
+#teams .teams {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+#teams .teams-sub {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+#teams .container .kolom {
+    height: 250px;
+    overflow: hidden;
+    /* border: 1px solid tomato; */
+}
+
+#teams .kolom i {
+    color: #252525;
+    right: -30px;
+    top: 5%;
+    font-size: 30px;
+    transform: rotateZ(100deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#teams .kolom:hover i {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-60px) rotateZ(0);
+}
+
+#teams .subtitle {
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+#teams .subtitle .nama {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#teams .bar-bawah {
+    height: var(--h-bar-bawah);
+    width: 90%;
+    background-color: #252525;
+    bottom: 0;
+}
+
+#teams .setengah-lingkaran {
+    --selisih-hr: calc(var(--h-bar-bawah) - var(--r-lingkaran));
+
+    height: var(--d-lingkaran);
+    width: var(--d-lingkaran);
+    background-color: #252525;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: var(--selisih-hr);
+}
+
+/* CONTACTS */
+#contacts {
+    width: 75%;
+    height: max-content;
+    background-color: #023047;
+    color: white;
+}
+
+#contacts .col-5 {
+    background-color: rgb(228, 228, 228);
+    height: 30vh;
+}
+
+#contacts .contact-brand {
+    z-index: 1;
+    color: #252525;
+    width: 100%;
+    /* border: 1px solid tomato; */
+}
+
+#contacts .contact-brand .brand {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    transform: translateY(-100%);
+    height: auto;
+    /* border: 1px solid tomato; */
+}
+
+#contacts .contact-brand .detail {
+    font-size: .8rem;
+}
+
+#contacts .contact-brand .brand img {
+    right: 100px;
+    top: 0;
+    /* border: 1px solid tomato; */
+}
+
+/* #contacts .contact-brand .brand img{
+    align-items: flex-end;
+} */
+
+#contacts .contact-latar::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 0;
+    background-image: url(img/logo-hima-edited.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -50px;
+    left: 40px;
+    opacity: .5;
+}
+
+#contacts .contact-menu .header{
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+#contacts .contact-menu div a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+/* #home .home-img .home-img-back {
+    background: linear-gradient(90deg, #252525, #2b2a2ae8);
+    z-index: 2;
+} */
+
+@media screen and (max-width: 1440px) {
+
+    #events .card-title {
+        font-size: 1.3rem;
+        bottom: .8rem;
+    }
+
+    #events .card-text, #events .card-text button {
+        font-size: .78rem;
+    }
+
+    .card .card-img-overlay .bar-bawah {
+        height: 4rem;
+    }
+
+    #events .card-img-overlay .selfie {
+        font-size: 1.4rem;
+        /* bottom: -.1rem; */
+    }
+
+    .card .card-img-overlay:hover .bar-bawah{
+        height: 14rem;
+    }
+
+    .card .card-img-overlay:hover .card-title{
+        transform: translateY(-10rem);
+    }
+
+    .card .card-img-overlay:hover .card-text{
+        transform: translateY(-10rem);
+    }
+
+    /* CONTACTS */
+    #contacts .contact-brand {
+        font-size: .7rem;
+    }
+
+    #contacts .contact-brand .brand {
+        width: 150px;
+    }
+
+    #contacts .contact-brand .detail {
+        font-size: .7rem;
+    }
+
+    #contacts .contact-menu {
+        padding-top: 2rem!important;
+        /* border: 1px solid tomato; */
+    }
+
+    #contacts .contact-menu .menu{
+        font-size: .7rem;
+    }
+
+    #contacts .contact-menu .header {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /* HOME */
+    #home {
+        height: 60vh;
+    }
+
+    #home .home-header h1 {
+        font-size: 3rem;
+    }
+
+    #home .home-header span {
+        font-size: 1rem;
+    }
+
+    /* ABOUT */
+    #about .about {
+        font-size: .7rem;
+    }
+
+    #about .about-sub {
+        font-size: 1.2rem;
+    }
+
+    #about .about-isi {
+        font-size: 1rem;
+    }
+
+    /* GALLERY */
+    #gallery {
+        height: 70vh;
+    }
+
+    #gallery .gallery {
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 500;
+        letter-spacing: .8rem;
+    }
+
+    /* EVENTS */
+    #events {
+        width: 80%;
+    }
+
+    #events .events {
+        font-size: .7rem;
+    }
+
+    #events .events-sub {
+        font-size: 1.2rem;
+    }
+
+    #events .card-title {
+        font-size: 1.3rem;
+        bottom: .8rem;
+    }
+
+    #events .card-text, #events .card-text button {
+        font-size: .6rem;
+    }
+
+    .card .card-img-overlay .bar-bawah {
+        height: 4rem;
+    }
+
+    #events .card-img-overlay .selfie {
+        font-size: 1.2rem;
+        bottom: -.1rem;
+    }
+
+    .card .card-img-overlay:hover .bar-bawah{
+        height: 14rem;
+    }
+
+    .card .card-img-overlay:hover .card-title{
+        transform: translateY(-10rem);
+    }
+
+    .card .card-img-overlay:hover .card-text{
+        transform: translateY(-10rem);
+    }
+
+    /* OUR TEAMS */
+    #teams {
+        --d-lingkaran: 100px;
+        --h-bar-bawah: 40px;
+
+        width: 70%;
+    }
+
+    #teams .teams {
+        font-size: .7rem;
+    }
+
+    #teams .teams-sub {
+        font-size: 1.2rem;
+    }
+
+    #teams .container .kolom {
+        height: 200px;
+    }
+
+    #teams .kolom i {
+        font-size: 25px;
+    }
+
+    #teams .subtitle {
+        margin-bottom: 3px;
+    }
+
+    #teams .subtitle .nama {
+        font-size: .8rem;
+    }
+
+    #teams .subtitle .jabatan {
+        font-size: .7rem;
+    }
+
+    /* CONTACTS */
+    #contacts .contact-brand {
+        font-size: .7rem;
+    }
+
+    #contacts .contact-brand .brand {
+        width: 150px;
+    }
+
+    #contacts .contact-brand .detail {
+        font-size: .5rem;
+    }
+
+    #contacts .contact-menu {
+        padding-top: 2rem!important;
+        /* border: 1px solid tomato; */
+    }
+
+    #contacts .contact-menu .menu{
+        font-size: .7rem;
+    }
+
+    #contacts .contact-menu .header {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    #home {
+        width: 100%;
+    }
+
+    #contacts {
+        width: 100%;
+    }
+
+    #teams .kolom i {
+        font-size: 20px;
+    }
+
+    #contacts .contact-brand .brand {
+        width: 150px;
+    }
+
+    #contacts .contact-brand .detail {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width:992px){
+    .navbar-collapse {
+        text-align: left;
+    }
+
+    .navbar-collapse .navbar-nav:nth-child() .navbar-item {
+        padding-inline: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #teams {
+        --d-lingkaran: 90px;
+        --h-bar-bawah: 38px;
+
+        width: 80%;
+    }
+
+    #teams .container .kolom {
+        height: 180px;
+    }
+
+    #teams .subtitle .nama {
+        font-size: .7rem;
+    }
+
+    #teams .subtitle .jabatan {
+        font-size: .6rem;
+    }
+
+    #contacts .contact-brand .brand {
+        width: 120px;
+    }
+
+    #contacts .contact-brand .detail {
+        font-size: .4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* ABOUT */
+    #about {
+        width: 70%;
+    }
+
+    #about .about {
+        font-size: .6rem;
+    }
+
+    #about .about-sub {
+        font-size: 1.1rem;
+    }
+
+    #about .about-isi {
+        font-size: .9rem;
+    }
+
+    /* EVENTS */
+    #events {
+        width: 85%;
+    }
+
+    #events .events {
+        font-size: .6rem;
+    }
+
+    #events .events-sub {
+        font-size: 1.1rem;
+    }
+
+    #events .card-title {
+        font-size: 1rem;
+        bottom: .5rem;
+    }
+
+    #events .card-img-overlay .selfie {
+        font-size: 1rem;
+        bottom: -.2rem;
+    }
+
+    #events .card-text, #events .card-text button {
+        font-size: .5rem;
+    }
+
+    .card .card-img-overlay .bar-bawah {
+        height: 3rem;
+    }
+
+    .card .card-img-overlay:hover .bar-bawah{
+        height: 10rem;
+    }
+
+    .card .card-img-overlay:hover .card-title{
+        transform: translateY(-7rem);
+    }
+
+    .card .card-img-overlay:hover .card-text{
+        transform: translateY(-7rem);
+    }
+
+
+    /* TEAMS */
+    #teams {
+        --d-lingkaran: 80px;
+        --h-bar-bawah: 38px;
+
+        width: 90%;
+    }
+
+    /* CONTACTS */
+    #contacts .contact-brand {
+        font-size: .6rem;
+    }
+
+    #contacts .contact-menu {
+        padding-top: 2rem!important;
+        /* border: 1px solid tomato; */
+    }
+
+    #contacts .contact-menu .menu{
+        font-size: .6rem;
+    }
+
+    #contacts .contact-menu .header {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* HOME */
+    #home .home-header h1 {
+        font-size: 2rem;
+    }
+
+    #home .home-header span {
+        font-size: .8rem;
+    }
+
+    /* ABOUT */
+    #about {
+        width: 70%;
+    }
+
+    #about .about {
+        font-size: .5rem;
+    }
+
+    #about .about-sub {
+        font-size: 1rem;
+    }
+
+    #about .about-isi {
+        font-size: .8rem;
+    }
+
+    /* EVENTS */
+    #events {
+        width: 85%;
+    }
+
+    #events .events {
+        font-size: .5rem;
+    }
+
+    #events .events-sub {
+        font-size: 1rem;
+    }
+
+    #events .card-title {
+        font-size: .8rem;
+        bottom: .4rem;
+    }
+
+    #events .card-img-overlay .selfie {
+        font-size: .7rem;
+        bottom: 0rem;
+    }
+
+    #events .card-text, #events .card-text button {
+        font-size: .4rem;
+    }
+
+    .card .card-img-overlay .bar-bawah {
+        height: 2.5rem;
+    }
+
+    .card .card-img-overlay:hover .bar-bawah{
+        height: 9rem;
+    }
+
+    .card .card-img-overlay:hover .card-title{
+        transform: translateY(-6.5rem);
+    }
+
+    .card .card-img-overlay:hover .card-text{
+        transform: translateY(-7rem);
+    }
+
+    /* TEAMS */
+    #teams {
+        --d-lingkaran: 60px;
+        --h-bar-bawah: 30px;
+
+        width: 90%;
+    }
+
+    #teams .container .kolom {
+        height: 120px;
+    }
+
+    #teams .kolom i {
+        font-size: 18px;
+    }
+
+    #teams .kolom:hover i {
+        transform: translateX(-40px);
+    }
+
+    #teams .subtitle .nama {
+        font-size: .6rem;
+    }
+
+    #teams .subtitle .jabatan {
+        font-size: .5rem;
+    }
+
+    /* CONTACTS */
+    #contacts {
+        height: 110px;
+    }
+
+    #contacts .contact-brand {
+        padding-inline: 0!important;
+    }
+
+    #contacts .contact-brand .brand {
+        width: 80px;
+    }
+
+    #contacts .contact-brand .detail {
+        font-size: .29rem;
+    }
+
+    #contacts .col-5 {
+        height: 110px;
+    }
+
+    #contacts .contact-brand {
+        font-size: .4rem;
+    }
+
+    #contacts .kanan{
+       position: absolute;
+       right: 0;
+       transform: translateX(-150%);
+    }
+
+    #contacts .contact-menu {
+        padding-top: 20px!important;
+    }
+
+    #contacts .contact-menu .menu{
+        font-size: .4rem;
+    }
+
+    #contacts .contact-menu .header {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    /* EVENTS */
+    #events {
+        width: 95%;
+    }
+
+    /* CONTACTS */
+    #contacts .kanan{
+        transform: translateX(-100%);
+    }
+
+    #contacts .contact-menu {
+        padding-top: 25px!important;
+    }
+
+    #contacts .contact-menu .menu{
+        font-size: .4rem;
+    }
+
+    #contacts .contact-menu .header {
+        font-size: .5rem;
+        padding-bottom: .5rem!important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* EVENTS */
+    #events {
+        margin-top: 50px;
+    }
+
+    #events .events {
+        font-size: .5rem;
+    }
+
+    #events .events-sub {
+        font-size: 1rem;
+    }
+
+    #events .card-title {
+        font-size: .8rem;
+        bottom: .4rem;
+    }
+
+    #events .card-img-overlay .selfie{
+        font-size: .7rem;
+        bottom: -.1rem;
+    }
+    #events .card-img-overlay .mading,     #events .card-img-overlay .design {
+        bottom: -.2rem;
+    }
+
+    /* TEAMS */
+    #teams {
+        --d-lingkaran: 45px;
+        --h-bar-bawah: 25px;
+    }
+
+    #teams .teams {
+        font-size: .5rem;
+    }
+
+    #teams .teams-sub {
+        font-size: 1rem;
+    }
+
+    #teams .subtitle .nama {
+        font-size: .4rem;
+    }
+
+    #teams .subtitle .jabatan {
+        font-size: .3rem;
+    }
+
+    #teams .container .kolom {
+        height: 80px;
+    }
+
+    /* CONTACTS */
+    #contacts .contact-brand {
+        padding-inline: 0!important;
+    }
+    #contacts .kanan{
+        transform: translateX(-70%);
+    }
+
+    #contacts .contact-menu {
+        padding-top: 25px!important;
+    }
+
+    #contacts .contact-menu .menu{
+        font-size: .35rem;
+    }
+
+    #contacts .contact-menu .header {
+        font-size: .4rem;
+        padding-bottom: .5rem!important;
+    }
+}
