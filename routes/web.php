@@ -81,6 +81,7 @@ Route::post('/admins/post/{id}',[AdminController::class,'destroy'])->name('del_p
 
 Route::get('/admins/post/checkSlug',[AdminController::class,'checkSlug'] );
 
+Route::delete('/admins/user/{id}',[AdminController::class,'user_destroy'])->name('del_use');
 
 // Cetak PDF
 

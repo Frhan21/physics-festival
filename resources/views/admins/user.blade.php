@@ -27,7 +27,12 @@
                     <div class="head mb-2 text-center">
                         Pengguna Website PF XXIV
                     </div>
-                    <table class="" id="myTable">
+                    @if (session()->has('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <table class="table " id="myTable">
                         <thead>
                             <tr>
                                 <th scope="col">No</th>
@@ -45,10 +50,11 @@
                                     <td>{{ $user->username }}</td>
                                     <td>{{ $user->email }}</td>
                                     <td>
-                                        <form action="{{ route('users') }}" method="post" class="d-inline">
-                                            @method('delete')
+                                        <form action="{{ route('del_use',$user->id) }}" method="post" class="d-inline">
                                             @csrf
-                                            <a class="btn btn-danger" href="{{ route('users') }}" role="button" onclick="return confirm('Apa Kamu Yakin ?? ')"><i class="bi bi-file-earmark-excel "></i></a>
+                                            @method('delete')
+                                            <button class="btn btn-danger" type="submit"><i
+                                                    class="bi bi-file-earmark-excel "></i></button>
                                         </form>
                                     </td>
                                 </tr>

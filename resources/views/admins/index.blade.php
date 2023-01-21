@@ -48,6 +48,8 @@
                                 {{-- <th scope="col">Bukti Pembayarannya</th> --}}
                                 <th scope="col">File Karya Peserta</th>
                                 <th scope="col">Sertifikat (Khusus Seminar)</th>
+                                <th scope="col">Bukti Pembayaran</th>
+                                <th scope="col">No Hp Peserta</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -77,6 +79,16 @@
 
                                     <td>
                                         {{ $siswa->status }}
+                                    </td>
+                                    @if ($siswa->events != 'Seminar Nasional')
+                                        <td><a href="../img/bukti-pembayaran/{{ $siswa->image }}" download> Download </a></td>
+                                    @else
+                                    <td>
+
+                                    </td>
+                                    @endif
+                                    <td>
+                                        {{ $siswa->no_hp }}
                                     </td>
 
                                 </tr>

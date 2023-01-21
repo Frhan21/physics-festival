@@ -87,6 +87,14 @@ class AdminController extends Controller
         $slug = SlugService::createSlug(Post::class, 'slug', $request->title);
         return response()->json(['slug'=>$slug]);
     }
+
+
+    public function user_destroy($id)
+    {
+        $user = User::find($id);
+        $user -> delete();
+        return redirect('dashboard/user')->with('success','User Berhasil di Hapus !!!');
+    }
 }
 
 
