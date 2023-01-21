@@ -39,10 +39,14 @@ class DashboardController extends Controller
             'events'=>'required',
             'sekolah_id'=>'required',
             'asal_sekolah'=>'required|max:255',
-            'image'=>'required|image|file|max:1024',
+            'image'=>'required|image|file|max:1024|',
+            'images'=>'image|file|max:1024|',
             'no_hp'=>'required|numeric|',
             'fileEvents'=>'mimes:pdf,doc,docx,jpg,jpeg,png|file|max:5012'
         ]);
+
+
+
         $peserta = new Peserta();
         $peserta->user_id = auth()->user()->id;
         $peserta->name = $request->name;

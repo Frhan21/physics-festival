@@ -48,31 +48,10 @@
         </select>
         <small><i>Silahkan pilih kategori umum untuk event ini</i></small>
     </div>
-    @if (request('title') == 'Seminar Nasional')
-    <label for="status" class="mt-3 mb-2"> Sertifikat Seminar </label><br>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="status" id="status" value="Dengan Nama" required>
-            <label class="form-check-label" for="status">Sertifikat dengan Nama</label>
-        </div>
-        <div class="form-check form-check-inline mb-3">
-            <input class="form-check-input" type="radio" name="status" id="status" value="Tanpa Nama" required>
-            <label class="form-check-label" for="status">Sertifikat Tanpa Nama</label>
-        </div>
-    @endif
     <div class="mb-2">
         <label for="no_hp" class="form-label @error('no_hp') is-invalid @enderror">No Hp</label>
         <input type="tel" class="form-control" id="no_hp" name="no_hp" placeholder="Nomor HP" required>
         @error('no_hp')
-            <div class="invalid-feedback">
-                {{ $message }}
-            </div>
-        @enderror
-    </div>
-    <div class="mb-3">
-        <label for="image" class="form-label @error('image') is-invalid @enderror">Bukti Pembayaran</label>
-        <input class="form-control" type="file" id="image" name="image" required>
-        <small><i>Untuk detail pembayaran dan biaya bisa dilihat dihalaman awal</i></small>
-        @error('image')
             <div class="invalid-feedback">
                 {{ $message }}
             </div>

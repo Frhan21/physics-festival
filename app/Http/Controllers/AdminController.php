@@ -75,10 +75,11 @@ class AdminController extends Controller
     }
 
 
-    public function destroy(Post $post)
+    public function destroy($id)
     {
-        Post::destroy($post->id);
-        return redirect('/dashboard/post')->with('success','Postingan berhasil dihapuskan !!');
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('dashboard/post')->with('success','Postingan berhasil dihapuskan !!');
     }
 
     public function checkSlug(Request $request)
