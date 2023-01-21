@@ -34,13 +34,12 @@ class DashboardController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData =$request->validate([
+        $request->validate([
             'name'=>'required|max:255',
             'events'=>'required',
             'sekolah_id'=>'required',
             'asal_sekolah'=>'required|max:255',
-            'image'=>'required|image|file|max:1024|',
-            'images'=>'image|file|max:1024|',
+            'image'=>'image|file|max:1024|',
             'no_hp'=>'required|numeric|',
             'fileEvents'=>'mimes:pdf,doc,docx,jpg,jpeg,png|file|max:5012'
         ]);

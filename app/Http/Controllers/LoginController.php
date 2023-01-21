@@ -29,7 +29,7 @@ class LoginController extends Controller
             }
 
             $request->session()->regenerate();
-            return redirect('/home');
+            return redirect('/dashboard');
         }
 
         return back()->with('loginError', 'Login Gagal, Silahkan Masukkan lagi !!');

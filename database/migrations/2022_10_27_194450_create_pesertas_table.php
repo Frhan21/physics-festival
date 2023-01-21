@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('asal_sekolah');
             $table->string('no_hp');
-            $table->string('image');
-            $table->string('images')->nullable();
+            $table->string('image')->nullable();
             $table->string('fileEvents')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();

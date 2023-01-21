@@ -57,5 +57,23 @@
             </div>
         @enderror
     </div>
+    @if (request('title') == 'Seminar Nasional')
+    <div class="mb-3">
+        <input class="form-control" type="hidden" id="images" name="images">
+    </div>
+    @endif
+
+    @if (request('title') == 'Design Competition')
+    <div class="mb-3">
+        <label for="image" class="form-label @error('image') is-invalid @enderror">Bukti Pembayaran</label>
+        <input class="form-control" type="file" id="image" name="image">
+        @error('image')
+            <div class="invalid-feedback">
+                {{ $message }}
+            </div>
+        @enderror
+    </div>
+    @endif
+
         <button type="submit" class="btn btn-success">Daftar</button>
 </form>
